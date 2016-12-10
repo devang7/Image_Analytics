@@ -18,11 +18,11 @@ public class CaptaCrackerTrainer {
 			BufferedReader br,bro;
 			if(q < 10)
 			{
-				br = new BufferedReader(new InputStreamReader(new FileInputStream("/sampleCaptchas/input/input0"+q+".txt")));
+				br = new BufferedReader(new InputStreamReader(new FileInputStream("sampleCaptchas/input/input0"+q+".txt")));
 			}
 			else
 			{
-				br = new BufferedReader(new InputStreamReader(new FileInputStream("/sampleCaptchas/input/input"+q+".txt")));
+				br = new BufferedReader(new InputStreamReader(new FileInputStream("sampleCaptchas/input/input"+q+".txt")));
 			}
 			String s[] = br.readLine().split(" ");
 			int n = Integer.parseInt(s[0]);
@@ -92,11 +92,11 @@ public class CaptaCrackerTrainer {
 			PrintWriter y = new PrintWriter(new FileOutputStream(new File("train4.txt"),true));
 			if(q < 10)
 			{
-				bro = new BufferedReader(new InputStreamReader(new FileInputStream("/sampleCaptchas/output/output0"+q+".txt")));
+				bro = new BufferedReader(new InputStreamReader(new FileInputStream("sampleCaptchas/output/output0"+q+".txt")));
 			}
 			else
 			{
-				bro = new BufferedReader(new InputStreamReader(new FileInputStream("/sampleCaptchas/output/output"+q+".txt")));
+				bro = new BufferedReader(new InputStreamReader(new FileInputStream("sampleCaptchas/output/output"+q+".txt")));
 			} 
 			char target[] = bro.readLine().toCharArray();
 			int counter = 0;
